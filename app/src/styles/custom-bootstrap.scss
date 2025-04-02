@@ -1,0 +1,47 @@
+$primary: #659f2c;
+$primary-dark: #4d7a22;
+$primary-light: #8ab85a;
+
+$secondary: #2c3e50;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #2c3e50;
+
+$theme-colors: (
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  "primary-light": $primary-light,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+.bg-primary-dark {
+  background-color: $primary-dark !important;
+}
+
+.text-primary-light {
+  color: $primary-light !important;
+}
+
+.btn-primary {
+  &:hover, &:focus {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+  }
+}
+
+.btn-outline-primary {
+  &:hover, &:focus {
+    color: white;
+  }
+}

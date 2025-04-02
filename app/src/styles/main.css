@@ -1,0 +1,55 @@
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+}
+
+.comment-item {
+  border-left: 3px solid $primary;
+  padding-left: 1rem;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: rgba($primary, 0.05);
+  }
+}
+
+.article-content {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    margin: 1rem 0;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-group-responsive {
+    flex-wrap: wrap;
+    
+    .btn {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
